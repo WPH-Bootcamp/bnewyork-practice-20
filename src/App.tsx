@@ -1,4 +1,5 @@
 import WhyForms from "./01-WhyForms";
+import ZodBasic from "./02-ZodBasic";
 
 type LessonProps = {
   title: string;
@@ -36,6 +37,13 @@ function App() {
           desc="Form pakai useState manual. Capek banget. Kita bikin mentee NGERASIN masalahnya dulu."
         >
           <WhyForms />
+        </Lesson>
+
+        <Lesson
+          title="01 — Kenapa butuh library form?"
+          desc="Form pakai useState manual. Capek banget. Kita bikin mentee NGERASIN masalahnya dulu."
+        >
+          <ZodBasic />
         </Lesson>
       </div>
     </div>
