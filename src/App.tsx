@@ -1,5 +1,6 @@
 import WhyForms from "./01-WhyForms";
 import ZodBasic from "./02-ZodBasic";
+import RHFBasic from "./03-RHF-basic";
 
 type LessonProps = {
   title: string;
@@ -39,11 +40,12 @@ function App() {
           <WhyForms />
         </Lesson>
 
-        <Lesson
-          title="01 — Kenapa butuh library form?"
-          desc="Form pakai useState manual. Capek banget. Kita bikin mentee NGERASIN masalahnya dulu."
-        >
+        <Lesson title="02 — Zod" desc="Form pakai zod validation">
           <ZodBasic />
+        </Lesson>
+
+        <Lesson title="03 — React Hook Form" desc="React Hook Form">
+          <RHFBasic />
         </Lesson>
       </div>
     </div>
