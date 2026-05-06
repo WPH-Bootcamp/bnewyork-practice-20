@@ -1,6 +1,8 @@
 import WhyForms from "./01-WhyForms";
 import ZodBasic from "./02-ZodBasic";
 import RHFBasic from "./03-RHF-basic";
+import RHFErrors from "./04.RHF-errors";
+import ZodPlusRHF from "./06-RHF-zod";
 
 type LessonProps = {
   title: string;
@@ -46,6 +48,17 @@ function App() {
 
         <Lesson title="03 — React Hook Form" desc="React Hook Form">
           <RHFBasic />
+        </Lesson>
+
+        <Lesson
+          title="04 — React Hook Form - handle error"
+          desc="React Hook Form"
+        >
+          <RHFErrors />
+        </Lesson>
+
+        <Lesson title="05 — React Hook Form & ZOD" desc="React Hook Form & ZOD">
+          <ZodPlusRHF />
         </Lesson>
       </div>
     </div>
