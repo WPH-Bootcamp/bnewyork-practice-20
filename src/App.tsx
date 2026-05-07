@@ -3,6 +3,8 @@ import ZodBasic from "./02-ZodBasic";
 import RHFBasic from "./03-RHF-basic";
 import RHFErrors from "./04.RHF-errors";
 import ZodPlusRHF from "./06-RHF-zod";
+import MotionScale from "./07-motion-basic";
+import MotionPresence from "./08-motion-presence";
 
 type LessonProps = {
   title: string;
@@ -59,6 +61,20 @@ function App() {
 
         <Lesson title="05 — React Hook Form & ZOD" desc="React Hook Form & ZOD">
           <ZodPlusRHF />
+        </Lesson>
+
+        <Lesson
+          title="06 — Motion"
+          desc="Animation with library motion for react"
+        >
+          <MotionScale />
+        </Lesson>
+
+        <Lesson
+          title="07 — Motion presence"
+          desc="Animation with library motion for react"
+        >
+          <MotionPresence />
         </Lesson>
       </div>
     </div>
