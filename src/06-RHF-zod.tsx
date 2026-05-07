@@ -5,11 +5,13 @@ import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import { Label } from "./components/ui/label";
 
+
+
 const loginSchema = z.object({
   email: z.string().min(1, "email wahib diisi").email("Format email salah"),
   password: z
     .string()
-    .min(8, "Password minimal 8 karakter")
+    .min(5, "Password minimal 5 karakter")
     .regex(/[A-Z]/, "Harus ada minimal 1 huruf besar")
     .regex(/[0-9]/, "Harus ada minimal 1 angka"),
 });
